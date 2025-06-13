@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: chatbot-service
+  description: A conversational AI chatbot service for customer interaction and support.
+  tags:
+    - chatbot
+    - ai
+    - nlp
+    - service
+  annotations:
+    github.com/project-slug: your-org/chatbot-repo
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  lifecycle: production
+  owner: saraswathi2003
+  system: customer-engagement-platform
+  providesApis:
+    - chatbot-api
